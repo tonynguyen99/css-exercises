@@ -19,10 +19,64 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  width: 250px;
+  height: 300px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
